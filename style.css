@@ -1,0 +1,234 @@
+:root {
+    --orange-clr: hsl(25, 97%, 53%);
+    --white-clr: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --med-grey: hsl(217, 9%, 30%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --v-dark-blue: hsl(216, 12%, 8%);
+
+    --fs-font: 15px;
+    --ff-font: 'Overpass', sans-serif;
+    --fw-norm: 400;
+    --fw-bold: 700;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /* Global styles */
+body {
+    background-color: var(--v-dark-blue);
+    color: var(--white-clr);
+    font-family: var(--ff-font);
+    padding-top: 20rem;
+}
+
+/* Component positioning */
+.component {
+  display: block;
+  align-items: center;
+  margin: auto;
+  width: 45vh;
+}
+
+/* Container styling */
+.container {
+  display: block;
+  background-color: var(--dark-blue);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.container svg {
+  margin-left: 1.5em;
+}
+
+/* SVG */
+.content {
+  display: flex;
+  justify-content: center;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  background-color: var(--med-grey);
+}
+
+.content svg {
+  display: block;
+  margin: auto;
+}
+
+/* Title */
+.title {
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+/* Rate us */
+.message {
+  gap: 1rem;
+  color: var(--light-grey);
+  font-size: var(--fs-font);
+}
+
+
+/* Score structure */
+.flex-group {
+  display: inline-flex;
+  gap: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+/* Score style */
+.rating__btn {
+  border-radius: 100%;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background-color: var(--med-grey);
+  color: var(--light-grey);
+  text-align: center;
+  line-height: 3.2;
+  transition: 0.3s;
+}
+
+.rating__btn:focus {
+  background-color: var(--light-grey);
+  color: var(--white-clr);
+}
+
+.rating__btn:hover {
+  cursor: pointer;
+  background-color: var(--orange-clr);
+  color: var(--white-clr);
+}
+
+/* Submit button */
+.submit__btn {
+  background-color: var(--orange-clr);
+  letter-spacing: 2px;
+  color: var(--white-clr);
+  text-transform: uppercase;
+  border-radius: 2rem;
+  border: none;
+  padding: .5rem;
+  width: 95%;
+  transition: 0.3s;
+}
+
+.submit__btn:hover {
+  cursor: pointer;
+  background-color: var(--white-clr);
+  color: var(--orange-clr);
+}
+
+/* Container Thank You card */
+.container__thanks {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 45vh;
+  background-color: var(--dark-blue);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Picture */
+.container__thanks svg {
+  display: flex;
+  margin: 0 auto 1rem;
+}
+
+/* Selected score text */
+.score {
+  align-items: center;
+  width: 50%;
+  padding: .5rem;
+  background-color: var(--med-grey);
+  color: var(--orange-clr);
+  border-radius: 30px;
+}
+
+.title__msg {
+  padding: 1.5rem;
+}
+
+.message__thanks {
+  color: var(--light-grey);
+  font-size: var(--fs-font);
+  margin-bottom: 2rem;
+}
+
+/* Arigato */
+.arigato {
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.attribution {
+  display: block;
+  text-align: center;
+  padding-top: 2.5rem;
+}
+
+.attribution a {
+  color: var(--orange-clr);
+  transition: 0.3s;
+}
+
+.attribution a:hover {
+  color: var(--white-clr);
+}
