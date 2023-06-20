@@ -78,7 +78,7 @@ body {
 /* Container styling */
 .container {
   display: block;
-  background-color: var(--dark-blue);
+  background-image: linear-gradient( hsl(213, 19%, 18%), hsl(203, 15%, 11%));
   padding: 2rem;
   border-radius: 2rem;
 }
@@ -175,11 +175,12 @@ body {
   justify-content: center;
   margin: auto;
   width: 45vh;
-  background-color: var(--dark-blue);
+  background-image: linear-gradient(hsl(213, 19%, 18%), hsl(203, 15%, 11%));
   padding: 2rem;
   border-radius: 2rem;
 }
 
+/* Hidden */
 .hidden {
   display: none;
 }
@@ -218,6 +219,8 @@ body {
   padding-top: 1rem;
 }
 
+
+/* Attribution links */
 .attribution {
   display: block;
   text-align: center;
