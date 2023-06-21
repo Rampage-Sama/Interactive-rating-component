@@ -196,13 +196,14 @@ body {
   align-items: center;
   width: 50%;
   padding: .5rem;
-  background-color: var(--med-grey);
+  background-color: var(--dark-blue);
   color: var(--orange-clr);
   border-radius: 30px;
 }
 
 .title__msg {
-  padding: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: .5rem;
 }
 
 .message__thanks {
