@@ -12,7 +12,7 @@ submitButton.addEventListener("click", () => {
     mainContainer.style.display = "none"
 })
 
-//
+//Rate again button
 rateAgain.addEventListener("click", () => {
     thanksContainer.classList.add("hidden")
     mainContainer.style.display = "block"
