@@ -19,7 +19,7 @@ rateAgain.addEventListener("click", () => {
 })
 
 
-//
+//Rate score
 rateScore.forEach((rate) => {
     rate.addEventListener("click", () => {
         rating.innerHTML = rate.innerHTML
